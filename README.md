@@ -26,7 +26,7 @@
 
 1. **Клонуйте репозиторій:**
    ```bash
-   git clone https://github.com/username/telegram-movie-bot.git
+   git clone https://github.com/wwhsprr/Telegram-Movie-Bot.git
    cd telegram-movie-bot
    ```
 
