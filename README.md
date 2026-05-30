@@ -24,7 +24,7 @@
 
 ## 📦 Встановлення та запуск
 
-1. **Клонуйте репозиторій:**
+1. **Встановіть файл або клонуйте репозиторій:**
    ```bash
    git clone https://github.com/wwhsprr/Telegram-Movie-Bot.git
    cd telegram-movie-bot
