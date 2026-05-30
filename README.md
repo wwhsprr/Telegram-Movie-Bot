@@ -42,15 +42,18 @@
    ```bash
    pip install -r requirements.txt
    ```
-   *(Якщо файлу requirements.txt немає, встановіть aiogram вручну: `pip install aiogram`)*
+   для Windows:
+   ```bash
+   pip install aiogram aiofiles requests beautifulsoup4 pillow
+   ```
 
-4. **Налаштування:**
+5. **Налаштування:**
    Відкрийте файл `config.py` і вкажіть ваш токен бота:
    ```python
    BOT_TOKEN = "ВАШ_ТОКЕН"
    ```
 
-5. **Запуск:**
+6. **Запуск:**
    ```bash
    python bot.py
    ```
