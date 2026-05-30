@@ -1,82 +1,93 @@
 # Telegram Movie Bot 🎬
 
-**Telegram Movie Bot** — це зручний інструмент для кіноманів, який допомагає організувати вашу особисту колекцію переглянутих фільмів та тих, що ви плануєте подивитися.
+**Telegram Movie Bot** is a convenient tool for movie enthusiasts that helps organize your personal collection of watched movies and movies you plan to watch.
 
-З його допомогою ви можете створити власну базу кінострічок, додаючи детальний опис, постер, рейтинг та акторський склад. Забудьте про нотатки в телефоні — тепер усі ваші фільми під рукою в Telegram!
+With this bot, you can create your own movie database by adding detailed information such as descriptions, posters, ratings, and cast members. Forget about keeping notes on your phone — now all your movies are available right in Telegram!
 
-## 🚀 Функціонал
+## 🚀 Features
 
-Бот підтримує такі можливості:
-- **Перегляд списку**: Виведення всіх збережених фільмів з постерами та детальною інформацією.
-- **Додавання фільмів**: Збереження назви, опису, року випуску, рейтингу, жанру, акторів та постера.
-- **Пошук**:
-  - За назвою фільму.
-  - За ім'ям актора.
-- **Фільтрація**: Відбір фільмів за жанром.
-- **Редагування**: Зміна опису існуючих фільмів.
-- **Видалення**: Видалення фільмів з бази даних.
+The bot supports the following functionality:
 
-## 🛠 Технології
+* **View Movie List**: Display all saved movies with posters and detailed information.
+* **Add Movies**: Save a movie title, description, release year, rating, genre, actors, and poster.
+* **Search**:
 
-- **Python 3.10+**
-- **Aiogram 3.x** — для роботи з Telegram API.
-- **JSON** — для зберігання даних про фільми.
+  * By movie title.
+  * By actor name.
+* **Filter Movies**: Filter movies by genre.
+* **Edit Movies**: Modify the description of an existing movie.
+* **Delete Movies**: Remove movies from the database.
 
-## 📦 Встановлення та запуск
+## 🛠 Technologies
 
-1. **Встановіть файл або клонуйте репозиторій:**
+* **Python 3.10+**
+* **Aiogram 3.x** — for working with the Telegram API.
+* **JSON** — for storing movie data.
+
+## 📦 Installation and Setup
+
+1. **Download the project or clone the repository:**
+
    ```bash
    git clone https://github.com/wwhsprr/Telegram-Movie-Bot.git
    cd telegram-movie-bot
    ```
 
-2. **Створіть віртуальне оточення:**
+2. **Create a virtual environment:**
+
    ```bash
    python -m venv .venv
    source .venv/bin/activate  # Linux/macOS
-   # або
+   # or
    .venv\Scripts\activate     # Windows
    ```
 
-3. **Встановіть залежності:**
+3. **Install dependencies:**
+
    ```bash
    pip install -r requirements.txt
    ```
-   для Windows:
+
+   For Windows:
+
    ```bash
    pip install aiogram aiofiles requests beautifulsoup4 pillow
    ```
 
-5. **Налаштування:**
-   Відкрийте файл `config.py` і вкажіть ваш токен бота:
+4. **Configuration:**
+
+   Open the `config.py` file and enter your bot token:
+
    ```python
-   BOT_TOKEN = "ВАШ_ТОКЕН"
+   BOT_TOKEN = "YOUR_TOKEN"
    ```
 
-6. **Запуск:**
+5. **Run the bot:**
+
    ```bash
    python bot.py
    ```
 
-## 🤖 Команди
+## 🤖 Commands
 
-| Команда | Опис |
-|---------|------|
-| `/start` | Запуск бота |
-| `/films` | Показати всі фільми |
-| `/create_film` | Додати новий фільм |
-| `/search_movie` | Знайти фільм за назвою |
-| `/search_by_actor` | Знайти фільм за актором |
-| `/filter_movie` | Фільтрувати за жанром |
-| `/edit_movie` | Редагувати опис фільму |
-| `/delete_movie` | Видалити фільм |
+| Command            | Description                 |
+| ------------------ | --------------------------- |
+| `/start`           | Start the bot               |
+| `/films`           | Show all movies             |
+| `/create_film`     | Add a new movie             |
+| `/search_movie`    | Search for a movie by title |
+| `/search_by_actor` | Search for a movie by actor |
+| `/filter_movie`    | Filter movies by genre      |
+| `/edit_movie`      | Edit a movie description    |
+| `/delete_movie`    | Delete a movie              |
 
-## 📂 Структура проекту
+## 📂 Project Structure
 
-- `bot.py` — основний файл запуску бота.
-- `handlers/` — (або відповідні модулі) обробники команд.
-- `data.py` — робота з даними (JSON).
-- `films.json` — база даних фільмів.
+* `bot.py` — main bot entry point.
+* `handlers/` — (or corresponding modules) command handlers.
+* `data.py` — data management (JSON).
+* `films.json` — movie database.
 
 ---
-Розроблено для власного використання та навчання.
+
+Developed for personal use and learning purposes.
